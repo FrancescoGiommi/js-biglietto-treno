@@ -48,27 +48,22 @@ if (!isPassengerAgeValid) {
 // ! ELABORAZIONE
 
 //* calcolo prezzo biglietto (0.21 € al km)
-
 const priceTicket = numberKm * kmCost;
 console.log(priceTicket);
 
+//* sconto del 20% da applicare per gli under 18
 if (passengerAge < 18) {
-  /* se il passeggero ha meno di 18 anni */
   const discountForUnder18 = 20;
   const priceUnder18 = priceTicket - discountForUnder18;
   console.log(priceUnder18.toFixed(2));
-  alert(
-    `Hai meno di 18 anni quindi viene applicato uno sconto del 20%, il prezzo è di ${priceUnder18}`
-  );
+  alert("Hai meno di 18 anni quindi il biglietto è scontato del 20%");
 }
 
+//* sconto del 40% da applicare per gli over 65
 if (passengerAge > 65) {
-  /* se il passeggero ha più di 65 anni*/
   const discountForOver65 = 40;
   const priceOver65 = priceTicket - discountForOver65;
   console.log(priceOver65.toFixed(2));
-  alert(
-    `Hai più di 65 anni quindi viene applicato uno sconto del 40%, il prezzo è di ${priceOver65}`
-  );
+  alert("Hai più di 65 anni quindi il biglietto è scontato del 40%");
 }
 // ! OUTPUT
