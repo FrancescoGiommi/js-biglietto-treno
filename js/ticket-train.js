@@ -63,6 +63,14 @@ if (passengerAge > 65) {
   const priceOver65 = priceTicket - discountForOver65;
   console.log(priceOver65.toFixed(2));
   alert("Hai più di 65 anni quindi il biglietto è scontato del 40%");
-}
+} else
+  alert("Hai l'età compresa tra i 18 e i 65 anni, quindi paghi per intero");
 
 // ! OUTPUT
+
+console.log(`
+numberKm: ${numberKm}
+kmCost:${kmCost}
+passengerAge:${passengerAge}
+priceTicket:${priceTicket}
+`);
