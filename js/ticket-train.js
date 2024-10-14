@@ -42,4 +42,10 @@ if (!isPassengerAgeValid) {
 
 // ! ELABORAZIONE
 
+//* calcolo prezzo biglietto (0.21 € al km)
+const kmCost = 0.21;
+console.log(kmCost);
+
+const priceTicket = numberKm * kmCost;
+console.log(priceTicket);
 // ! OUTPUT
