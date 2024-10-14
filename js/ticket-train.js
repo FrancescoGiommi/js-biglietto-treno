@@ -48,4 +48,27 @@ console.log(kmCost);
 
 const priceTicket = numberKm * kmCost;
 console.log(priceTicket);
+
+//** sconto del 20% per gli under 18
+const under18Discount = 20;
+const priceForUnder18 = priceTicket - under18Discount;
+
+if (passengerAgeDiscount) { 
+    /* se il passeggero ha meno di 18 anni */
+    passengerAge < 18;
+  alert("Hai meno di 18 anni quindi viene applicato uno sconto del 20%");
+  
+  else {
+
+  }
+
+}
+
+//** sconto del 40% per gli over 65
+const over65Discount = 40;
+const priceForOver65 = priceTicket - over65Discount;
+if (over65Discount) {
+  alert("Per chi ha più di 65 anni viene applicato uno sconto del 40%");
+}
+
 // ! OUTPUT
