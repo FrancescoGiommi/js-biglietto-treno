@@ -16,11 +16,29 @@
 
 // ! RACCOLTA DATI
 
-//* chiedo all'utente il numero di chlometri che vuole percorrrere
+//* chiedo all'utente il numero di chlometri che vuole percorrrere e lo trasformo in numero
 const numberKm = parseInt(
   prompt("Inserisci il numero di chilometri che devi percorrere")
 );
 console.log(numberKm);
+
+//* controllo che sia valido
+const isNumberKmValid = !isNaN(numberKm) && numberKm > 0;
+
+if (!isNumberKmValid) {
+  alert("Il valore inserito non è valido");
+}
+
+//* chiedo l'eta del passeggero
+const passengerAge = parseInt(prompt("Inserisci l'eta del passeggero"));
+console.log(passengerAge);
+
+//* controllo che sia valido
+const isPassengerAgeValid = !isNaN(passengerAge) && passengerAge > 0;
+
+if (!isPassengerAgeValid) {
+  alert("Il valore inserito non è valido");
+}
 
 // ! ELABORAZIONE
 
