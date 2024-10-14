@@ -43,8 +43,6 @@ if (!isPassengerAgeValid) {
   alert("Il valore inserito non è valido");
 }
 
-//* sconto del 20% da applicare per gli under 18
-
 // ! ELABORAZIONE
 
 //* calcolo prezzo biglietto (0.21 € al km)
@@ -66,4 +64,5 @@ if (passengerAge > 65) {
   console.log(priceOver65.toFixed(2));
   alert("Hai più di 65 anni quindi il biglietto è scontato del 40%");
 }
+
 // ! OUTPUT
