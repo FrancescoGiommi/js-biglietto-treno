@@ -46,7 +46,7 @@ if (isNumberKmValid && isPassengerAgeValid) {
     const discountForUnder18 = 20;
     const priceUnder18 = (priceTicket - discountForUnder18) % 100;
     alert("Hai meno di 18 anni quindi viene applicato uno sconto del 20%");
-    console.log(`Lo sconto è di € ${priceUnder18.toFixed(2)}`);
+    console.log(`Il prezzo finale è di € ${priceUnder18.toFixed(2)}`);
   }
 
   //* sconto del 40% da applicare per gli over 65
@@ -54,7 +54,7 @@ if (isNumberKmValid && isPassengerAgeValid) {
     const discountForOver65 = 40;
     const priceOver65 = (priceTicket - discountForOver65) % 100;
     alert("Hai più di 65 anni quindi viene applicato uno sconto del 40%");
-    console.log(`Lo sconto è di € ${priceOver65.toFixed(2)}`);
+    console.log(`Il prezzo finale è di € ${priceOver65.toFixed(2)}`);
   }
 } else {
   alert(`ERRORE :
